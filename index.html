@@ -18,11 +18,14 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
+      let react_text = "React ⚛️";
+      let angular_text = "Angular";
+      let vue_text = "Vue";
       ReactDOM.render(
         <ul>
-          <li>React</li>
-          <li>Angular</li>
-          <li>Vue</li>
+          <li>{react_text}</li>
+          <li>{angular_text}</li>
+          <li>{vue_text}</li>
         </ul>,
         document.getElementById("root")
       );
