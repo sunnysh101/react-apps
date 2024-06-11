@@ -10,18 +10,20 @@
       src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
       crossorigin
     ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
     <title>React ⚛️</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/javascript">
-      heading = React.createElement(
-        "h1",
-        null,
-        "Getting started with React"
-      );
+    <script type="text/babel">
       ReactDOM.render(
-        heading,
+        <ul>
+          <li>React</li>
+          <li>Angular</li>
+          <li>Vue</li>
+        </ul>,
         document.getElementById("root")
       );
     </script>
